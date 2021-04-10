@@ -1,0 +1,33 @@
+{
+  "name": "supersimpleREST",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appcoreopc/supersimpleREST.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appcoreopc/supersimpleREST/issues"
+  },
+  "homepage": "https://github.com/appcoreopc/supersimpleREST#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.37",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "express-jwt-authz": "^2.4.1",
+    "jwks-rsa": "^2.0.2"
+  }
+}
